@@ -1,0 +1,32 @@
+.body_background{
+    background-image: url("https://cdn.hipwallpaper.com/i/62/26/HKoPzd.jpg");
+    text-align: center;
+}
+
+.login_div1 , .login_div2
+	{
+		background: lightblue;
+		padding: 10px;
+		float: none;
+		border-radius: 15px;
+		margin-bottom: 50px;
+	}
+
+#word
+{
+	width: 60%;
+}
+
+#word_display
+{
+	letter-spacing: 5px;
+}
+
+h1{
+    color: lightcoral;
+    font-weight: bold;
+}
+
+#login_btn{
+	margin-top: 20px;
+}
