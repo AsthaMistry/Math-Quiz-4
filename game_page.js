@@ -4,14 +4,14 @@ player2_name = localStorage.getItem("player2_name");
 player1_score = 0;
 player2_score = 0;
 
-document.getElementById("player1_name").innerHTML = player1_name + " : ";
-document.getElementById("player2_name").innerHTML = player2_name + " : ";
+document.getElementById("player2_name").value = player2_name + " : ";
+document.getElementById("player1_name").value = player1_name + " : ";
 
 document.getElementById("player1_score").innerHTML = player1_score;
 document.getElementById("player2_score").innerHTML = player2_score;
 
-document.getElementById("player_Q").innerHTML = "Question Turn : " + player1_name;
-document.getElementById("player_A").innerHTML = "Answer Turn : " + player2_name;
+document.getElementById("player_question").innerHTML = "Question Turn : " + player1_name;
+document.getElementById("player_answer").innerHTML = "Answer Turn : " + player2_name;
 
 function send(){
 
@@ -36,13 +36,13 @@ function send(){
 
         if(answer_turn == "player1"){
 
-            update_player1_score = player1_score +1;
-            document.getElementById("player1_score").innerHTML = update_player1_score;
+            player1_score = player1_score +1;
+            document.getElementById("player1_score").innerHTML = player1_score;
         }
         else{
             
-            update_player2_score = player2_score +1;
-            document.getElementById("player2_score").innerHTML = update_player2_score;
+            player2_score = player2_score +1;
+            document.getElementById("player2_score").innerHTML = player2_score;
         }
     }
 
